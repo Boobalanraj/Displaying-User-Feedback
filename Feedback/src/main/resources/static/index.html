@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Form</title>
+</head>
+<style>
+
+input[type=text], input[type=email]{
+  width: 30%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical ;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+	<div class="container">
+	<form action="feedback" align="center" method="post">
+		<h2>Feedback Form</h2>
+		Name &nbsp &nbsp &nbsp
+		<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+		<br>
+		Email &nbsp &nbsp &nbsp
+		<input type="text" id="email" name="email" placeholder="Enter your Email" required>
+		<br>
+		Feedback &nbsp
+		<input type="text" id="feedback" name="feedback" placeholder="Write your feedback here... " style="height:200px" required>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+</body>
+</html>
